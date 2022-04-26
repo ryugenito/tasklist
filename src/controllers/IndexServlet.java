@@ -39,7 +39,7 @@ public class IndexServlet extends HttpServlet {
 
         em.close();
 
-        request.setAttribute("tasklist", tasklists);
+        request.setAttribute("tasklists", tasklists);
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasklists/index.jsp");
         rd.forward(request, response);
